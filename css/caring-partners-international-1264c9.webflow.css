@@ -1363,6 +1363,7 @@ body {
     justify-content: flex-start;
     align-items: center;
     width: auto;
+    height: 100%;
   }
 
   .flex-block {
