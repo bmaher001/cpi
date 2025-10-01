@@ -2565,7 +2565,7 @@ body {
   }
 
   .footer-content {
-    flex-flow: wrap;
+    flex-flow: column;
     grid-template-columns: 1fr 1fr;
     margin-top: 40px;
     display: flex;
