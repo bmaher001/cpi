@@ -265,6 +265,7 @@ body {
 }
 
 .navbar2_dropdown-link.w--current {
+  pointer-events: none;
   color: var(--\<unknown\|relume-variable-neutral-shade-7\>);
 }
 
@@ -2479,10 +2480,6 @@ body {
 
   .navbar2_dropdown-link:hover {
     background-color: #0a0a0a00;
-  }
-
-  .navbar2_dropdown-link.w--current {
-    pointer-events: none;
   }
 
   .container {
