@@ -1,4 +1,4 @@
-<!DOCTYPE html><!--  This site was created in Webflow. https://webflow.com  --><!--  Last Published: Sat Oct 04 2025 03:58:36 GMT+0000 (Coordinated Universal Time)  -->
+<!DOCTYPE html><!--  This site was created in Webflow. https://webflow.com  --><!--  Last Published: Mon Oct 06 2025 03:12:54 GMT+0000 (Coordinated Universal Time)  -->
 <html data-wf-page="68b1c1103f32492f9e67d48b" data-wf-site="68b1c10f3f32492f9e67d3f6">
 <head>
   <meta charset="utf-8">
@@ -48,14 +48,16 @@
               <div class="navbar-glass-effect dropdownl-list"></div>
               <div class="navbar-glass-tint navbar2_dropdown-list"></div>
               <div class="navbar-glass-shine navbar2_dropdown-list"></div>
-              <a href="#" class="navbar2_dropdown-link w-dropdown-link">Our History</a>
+              <a href="our-history.html" class="navbar2_dropdown-link w-dropdown-link">Our History</a>
               <a href="#" class="navbar2_dropdown-link w-dropdown-link">Ministry Team</a>
               <a href="#" class="navbar2_dropdown-link w-dropdown-link">You Need a Checkup!</a>
             </nav>
           </div>
           <div data-delay="200" data-hover="true" class="navbar2_menu-dropdown w-dropdown">
             <div class="navbar_dropdwn-toggle w-dropdown-toggle">
-              <div class="navbar_link">Our programs</div>
+              <a href="#" class="navbar_link w-inline-block">
+                <div class="navbar_link">Our programs</div>
+              </a>
               <div class="dropdown-chevron w-embed"><svg width=" 100%" height=" 100%" viewbox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" clip-rule="evenodd" d="M2.55806 6.29544C2.46043 6.19781 2.46043 6.03952 2.55806 5.94189L3.44195 5.058C3.53958 4.96037 3.69787 4.96037 3.7955 5.058L8.00001 9.26251L12.2045 5.058C12.3021 4.96037 12.4604 4.96037 12.5581 5.058L13.4419 5.94189C13.5396 6.03952 13.5396 6.19781 13.4419 6.29544L8.17678 11.5606C8.07915 11.6582 7.92086 11.6582 7.82323 11.5606L2.55806 6.29544Z" fill="currentColor"></path>
                 </svg></div>
@@ -72,7 +74,9 @@
           </div>
           <div data-delay="200" data-hover="true" class="navbar2_menu-dropdown w-dropdown">
             <div class="navbar_dropdwn-toggle w-dropdown-toggle">
-              <div class="navbar_link">Get involved</div>
+              <a href="#" class="navbar_link w-inline-block">
+                <div class="navbar_link">Get involved</div>
+              </a>
               <div class="dropdown-chevron w-embed"><svg width=" 100%" height=" 100%" viewbox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" clip-rule="evenodd" d="M2.55806 6.29544C2.46043 6.19781 2.46043 6.03952 2.55806 5.94189L3.44195 5.058C3.53958 4.96037 3.69787 4.96037 3.7955 5.058L8.00001 9.26251L12.2045 5.058C12.3021 4.96037 12.4604 4.96037 12.5581 5.058L13.4419 5.94189C13.5396 6.03952 13.5396 6.19781 13.4419 6.29544L8.17678 11.5606C8.07915 11.6582 7.92086 11.6582 7.82323 11.5606L2.55806 6.29544Z" fill="currentColor"></path>
                 </svg></div>
@@ -88,13 +92,17 @@
           </div>
           <div data-delay="200" data-hover="false" class="navbar2_menu-dropdown w-dropdown">
             <div class="navbar_dropdwn-toggle w-dropdown-toggle">
-              <div class="navbar_link">News</div>
+              <a href="#" class="navbar_link w-inline-block">
+                <div class="navbar_link">News</div>
+              </a>
             </div>
             <nav class="navbar2_dropdown-list w-dropdown-list"></nav>
           </div>
           <div data-delay="200" data-hover="false" class="navbar2_menu-dropdown w-dropdown">
             <div class="navbar_dropdwn-toggle w-dropdown-toggle">
-              <div class="navbar_link">Contact us</div>
+              <a href="#" class="navbar_link w-inline-block">
+                <div class="navbar_link">Contact us</div>
+              </a>
             </div>
             <nav class="navbar2_dropdown-list w-dropdown-list"></nav>
           </div>
@@ -104,28 +112,23 @@
 .glass-effect{
   z-index: 0;
   inset: 0;
-  backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(20px) saturate(180%);
+  backdrop-filter: blur(20px) saturate(180%);
+  -webkit-filter: url(#glass-distortion);
   filter: url(#glass-distortion);
   overflow: hidden;
   isolation: isolate;
+  background: rgba(255, 255, 255, 0.05);
 }
 </style>
-          <svg style="display: none">
-            <filter id="glass-distortion" x="0%" y="0%" width="100%" height="100%" filterunits="objectBoundingBox">
-              <feturbulence type="fractalNoise" basefrequency="0.01 0.01" numoctaves="1" seed="5" result="turbulence">
-              <!--  Seeds: 14, 17,   -->
-              <fecomponenttransfer in="turbulence" result="mapped">
-                <fefuncr type="gamma" amplitude="1" exponent="10" offset="0.5">
-                <fefuncg type="gamma" amplitude="0" exponent="1" offset="0">
-                <fefuncb type="gamma" amplitude="0" exponent="1" offset="0.5">
-              </fefuncb></fefuncg></fefuncr></fecomponenttransfer>
-              <fegaussianblur in="turbulence" stddeviation="3" result="softMap">
-              <fespecularlighting in="softMap" surfacescale="5" specularconstant="1" specularexponent="100" lighting-color="white" result="specLight">
-                <fepointlight x="-200" y="-200" z="300">
-              </fepointlight></fespecularlighting>
-              <fecomposite in="specLight" operator="arithmetic" k1="0" k2="1" k3="1" k4="0" result="litImage">
-              <fedisplacementmap in="SourceGraphic" in2="softMap" scale="150" xchannelselector="R" ychannelselector="G">
-            </fedisplacementmap></fecomposite></fegaussianblur></feturbulence></filter>
+          <svg style="position: absolute; width: 0; height: 0;">
+            <filter id="glass-distortion" x="-50%" y="-50%" width="200%" height="200%" filterunits="objectBoundingBox" color-interpolation-filters="linearRGB">
+              <feturbulence type="fractalNoise" basefrequency="0.008 0.008" numoctaves="2" seed="5" result="turbulence" stitchtiles="stitch">
+              <fecolormatrix in="turbulence" type="saturate" values="0" result="desaturated">
+              <fegaussianblur in="desaturated" stddeviation="1.5" result="softNoise">
+              <fedisplacementmap in="SourceGraphic" in2="softNoise" scale="35" xchannelselector="R" ychannelselector="G" result="displaced">
+              <fegaussianblur in="displaced" stddeviation="0.5" result="finalBlur">
+            </fegaussianblur></fedisplacementmap></fegaussianblur></fecolormatrix></feturbulence></filter>
           </svg>
         </div>
         <div id="w-node-_310a7111-8107-43f1-10aa-496c0450cc4c-0450cc10" class="navbar_button-wrapper">
